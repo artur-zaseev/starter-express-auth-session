@@ -1,0 +1,32 @@
+<html lang='ru'>
+
+<head>
+  <%- include('../partials/head'); %>
+  <title>Admin</title>
+</head>
+
+<body>
+  <div><%- include('../partials/menu'); %></div>
+
+  <h1>Admin page</h1>
+
+  <h3>Users:</h3>
+
+  <ul>
+    <% users.forEach(user => { %>
+    <li>
+      <%= user.email %> : <%= user.password %>
+    </li>
+    <% }) %>
+  </ul>
+
+  <h3>Tokens: </h3>
+
+  <div>
+    <pre>
+      <%= tokens %>
+    </pre>
+  </div>
+</body>
+
+</html>

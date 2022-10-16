@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <%- include('../partials/head'); %>
+  <title>Login</title>
+</head>
+
+<body>
+  <div><%- include('../partials/menu'); %></div>
+
+  <h1>Login</h1>
+
+  <form action="/login" method="POST">
+    <div>
+      <input type="text" name="email" placeholder="email" />
+    </div>
+    <div>
+      <input type="text" name="password" placeholder="password" />
+    </div>
+    <div>
+      <button type="submit">send</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
